@@ -1,0 +1,16 @@
+.sidebar-item {
+  padding-left: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  
+  
+  padding:8px 0 8px 10px;
+  cursor:pointer;
+}
+.sidebar-active{
+  background-color:#e6f7ff;
+  border-right: 2px solid #1890FF;
+  transiton:all .2s;
+}

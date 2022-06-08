@@ -1,0 +1,25 @@
+
+.navbar{
+  background-color:white;
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  box-shadow:0px 1px 16px rgba(0,0,0,.3);
+}
+.navLeft{
+  margin-left:50px;
+  width:150px;
+  display:flex;
+  justify-content:space-between;
+}
+.navRight{
+  display:flex;
+  justify-content:space-between;
+  width:150px;
+}
+.icons{
+  cursor:pointer;
+}
+.darkIcon{
+  color:#d2d2D2;
+}

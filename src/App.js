@@ -1,24 +1,33 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
+import { flushSync } from 'react-dom';
 import './App.css';
+// import MainContent from './components/Content/Order.js';
+import Navbar from './components/Header/Navbar.js';
+import Sidebar from './components/Sidebar/Sidebar';
+import Order from './components/Content/Order.js';
+
+import Dashboard from './components/Content/Dashboard';
+import Inventory from './components/Content/Inventory';
+import Shopping from './components/Content/Shopping';
+import Channel from './components/Content/Channel';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <React.Fragment>
+      
+      <header className='header'>
+        <Navbar />
       </header>
-    </div>
+      <main className='main'>
+        <div className='sidebar'>
+          <Sidebar />
+        </div>
+        <div className='main-content'>
+          <Order />
+        </div>
+      </main>
+    </React.Fragment>
   );
 }
 
