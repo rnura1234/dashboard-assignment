@@ -1,9 +1,12 @@
 import React from 'react';
+import UnderConstruction from "./UnderConstruction";
 
 const Inventory = () => {
   return (
     <div>
-      <h1>Inventory</h1>
+    
+      <h1 style={{ textAlign: 'center' }}>Invertory</h1>
+      <UnderConstruction/>
     </div>
   );
 };

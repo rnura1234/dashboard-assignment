@@ -10,21 +10,28 @@ import Order from './components/Content/Order.js';
 import Dashboard from './components/Content/Dashboard';
 import Inventory from './components/Content/Inventory';
 import Shopping from './components/Content/Shopping';
-import Channel from './components/Content/Channel';
+
 
 function App() {
+  const [activeSide, setActiveSide] = useState({});
+  const onActiveChangeHandler = (data) => {
+    setActiveSide(data);
+  };
   return (
     <React.Fragment>
-      
       <header className='header'>
         <Navbar />
       </header>
       <main className='main'>
         <div className='sidebar'>
-          <Sidebar />
+          <Sidebar onActiveChange={onActiveChangeHandler} />
         </div>
         <div className='main-content'>
-          <Order />
+          {activeSide.order == 'active' && <Order />}
+          {activeSide.shopping == 'active' && <Shopping />}
+          {activeSide.dashboard == 'active' && <Dashboard />}
+          {activeSide.inventory == 'active' && <Inventory />}
+          {activeSide.channel == 'active' && <Inventory />}
         </div>
       </main>
     </React.Fragment>
