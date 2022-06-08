@@ -1,3 +1,4 @@
+import { KeyboardArrowDown } from '@mui/icons-material';
 import React from 'react';
 import classes from './OrderItem.module.css';
 const OrderItem = (props) => {
@@ -8,10 +9,9 @@ const OrderItem = (props) => {
         <input type='checkbox' />
       </div>
       <div>
-
         <img src={process.env.PUBLIC_URL + '/assest/image/shopify.png'} alt='sort' width='20px' />
       </div>
-      <div>{props.orderNo}</div>
+      <div className={classes.orderno}>{props.orderNo}</div>
       <div>{props.date}</div>
       <div>{props.city}</div>
       <div>{props.customerName}</div>
@@ -20,7 +20,12 @@ const OrderItem = (props) => {
         <button className={classes['status-btn']}>Pending</button>
       </div>
       <div>
-        <button className={classes['action-btn']}>Action</button>
+        <button className={classes['action-btn']}>
+          <span>Action</span>
+          <span>
+            <KeyboardArrowDown />
+          </span>
+        </button>
       </div>
     </div>
   );

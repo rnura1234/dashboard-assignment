@@ -84,7 +84,7 @@
 }
 .content-detail {
   display: grid;
-  grid-template-columns: 60px 80px 120px 140px 140px 100px 150px 100px 120px 140px;
+  grid-template-columns: 80px 50px 120px 140px 120px 100px 150px 80px 120px 140px;
   justify-items: streched;
   background-color: #fafafa;
   overflow: hidden;
@@ -121,6 +121,7 @@
 .tatal-order {
   max-height: 200px;
   margin-bottom: 15px;
+  weight:100%;
   overflow-y: scroll;
   overflow-x: hidden;
   /* border-bottom: 1px solid #999; */

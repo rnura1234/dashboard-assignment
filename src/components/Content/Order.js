@@ -160,34 +160,9 @@ const Order = () => {
             </div>
           </div>
           <div className={classes['tatal-order']}>
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
-            <OrderItem />
+            <OrderItem orderNo='#TRN20223560' date='06/06/2022' city='Kolkata' customerName='Nidhin Sankar' value='0.0' />
+            <OrderItem orderNo='#TRN20223561' date='06/06/2022' city='Hyderabad' customerName='Sanjeev' value='0.0' />
+            <OrderItem orderNo='#TRN20223562' date='06/06/2022' city='Banglore' customerName='Shiva Sai' value='0.0' />
           </div>
           <div className={classes['next-pre-btn']}>
             <div className={classes['left-page']}>

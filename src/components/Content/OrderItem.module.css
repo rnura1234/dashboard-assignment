@@ -1,18 +1,24 @@
 .item-detail {
   display: grid;
- grid-template-columns: 60px 80px 120px 140px 140px 100px 150px 100px 120px 140px;
+  grid-template-columns: 80px 50px 120px 140px 120px 100px 150px 80px 120px 140px;
   justify-items: center;
   border-bottom: 1px solid #777;
   padding: 10px 0;
 }
-.status-btn{
-  border:1px solid #dff8cb;
-  color:#afdcac;
-  background-color:white;
+.status-btn {
+  border: 1px solid #dff8cb;
+  color: #afdcac;
+  padding:5px 8px;
+  background-color: white;
 }
-.action-btn{
-  border:1px solid #ededed;
-  color:#8b8c8e;
-  background-color:white;
-  margin-left:-10px;
+.action-btn {
+  border: 1px solid #ededed;
+  color: #8b8c8e;
+  padding:5px 8px;
+  background-color: white;
+  margin-left: -10px;
+}
+.orderno {
+  color: #75baff;
+  font-size: 14px;
 }
